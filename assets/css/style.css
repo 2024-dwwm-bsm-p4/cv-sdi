@@ -12,8 +12,7 @@ body {
     }
     
 header {
-    tex;
-    color: white;
+    color: #F5F5F5;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -36,11 +35,30 @@ header {
     color: white;
     }
 
+    .card {
+        margin: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        overflow-wrap: break-word;
+    }
 
+    .card:hover {
+        transform: translate(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+#experiences {
+    padding: 20px;
+    line-height: 0.6;
+    text-align: center;
+}
 
 .logo-bar {
     width: 30px;
 }
-.progress-bar {
-    width: 20px;
+progress {
+    width: 50%;
+    height: 20px;
 }
