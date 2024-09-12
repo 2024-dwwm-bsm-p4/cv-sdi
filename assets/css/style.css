@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    color: white;
+    width: 100%;
+    height: auto;
+
+    background: rgb(3,0,45);
+    background: linear-gradient(360deg, rgba(3,0,45,1) 0%, rgba(7,7,123,1) 80%, rgba(0,84,160,1) 100%);
+
+}
