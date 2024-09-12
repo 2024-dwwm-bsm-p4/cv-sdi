@@ -21,6 +21,13 @@ header {
     background: rgb(3,0,45);
     }
 
+    header div p a {
+        text-decoration: none;
+    }
+header div p {
+        line-height: 0.6em;
+    }
+
 .rounded-img {
     width: 200px;
     height: 200px;
@@ -35,24 +42,30 @@ header {
     color: white;
     }
 
-    .card {
-        margin: 15px;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: #fff;
-        overflow-wrap: break-word;
+.card {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    overflow-wrap: break-word;
     }
 
-    .card:hover {
-        transform: translate(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+.card h2 {
+    color: rgb(3,0,45);
+}
+
+.card h3 {
+    color: rgb(5, 0, 60);
+}
+.card:hover {
+    transform: translate(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
 #experiences {
     padding: 20px;
     line-height: 0.6;
-    text-align: center;
 }
 
 .logo-bar {
