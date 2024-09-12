@@ -1,20 +1,45 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    background-color: #F5F5F5;
+    color: #222222;
     margin: 0;
     padding: 0;
 }
 
 .text-center {
     text-align: center;
-}
-
+    }
+    
 header {
+    tex;
     color: white;
     width: 100%;
     height: auto;
-
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
     background: rgb(3,0,45);
-    background: linear-gradient(360deg, rgba(3,0,45,1) 0%, rgba(7,7,123,1) 80%, rgba(0,84,160,1) 100%);
+    }
 
+.rounded-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+
+.about-me {
+    padding: 20px;
+    height: auto;
+    background: rgb(5, 0, 60);
+    color: white;
+    }
+
+.logo-bar {
+    width: 40px;
+    height: 40px;
+}
+.progress-bar {
+    width: 20px;
 }
