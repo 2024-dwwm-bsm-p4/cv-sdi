@@ -21,9 +21,14 @@ header {
     background: rgb(3,0,45);
     }
 
-    header div p a {
-        text-decoration: none;
+header div p a {
+    text-decoration: none;
     }
+
+header div p a:hover {
+
+}
+
 header div p {
         line-height: 0.6em;
     }
@@ -41,7 +46,7 @@ header div p {
     background: rgb(5, 0, 60);
     color: white;
     }
-
+    
 .card {
     margin: 15px;
     padding: 15px;
@@ -59,18 +64,97 @@ header div p {
 .card h3 {
     color: rgb(5, 0, 60);
 }
+
 .card:hover {
     transform: translate(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
+
 #experiences {
     padding: 20px;
-    line-height: 0.6;
+    line-height: 1.2;
+}
+
+#experiences h2 {
+    padding: 20px;
+    margin: auto;
+}
+
+#experiences hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#experiences .card p {
+    line-height: 0.5;
+}
+
+#parcours {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+#parcours h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+#parcours hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#parcours .card p {
+    line-height: 0.5;
+}
+
+#skills {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+#skills h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+#skills hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#skills .logo-skills .logo-html {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+#soft-skills {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+#soft-skills h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+#soft-skills hr {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .logo-bar {
     width: 30px;
 }
+
 progress {
     width: 50%;
     height: 20px;
