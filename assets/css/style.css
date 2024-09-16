@@ -153,7 +153,7 @@ header div p {
     padding: 20px;
     text-align: center;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -189,7 +189,7 @@ header div p {
     padding: 20px;
     text-align: center;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -219,7 +219,6 @@ header div p {
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    bac
 }
 
 .langues div {
