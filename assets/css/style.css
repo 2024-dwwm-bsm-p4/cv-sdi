@@ -197,6 +197,7 @@ header div p {
 #langues {
     padding: 20px;
     line-height: 1.2;
+    background-color: #ececec;
 }
 
 #langues h2 {
@@ -218,6 +219,7 @@ header div p {
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    bac
 }
 
 .langues div {
