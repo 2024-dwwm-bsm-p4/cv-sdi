@@ -153,7 +153,7 @@ header div p {
     padding: 20px;
     text-align: center;
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -189,13 +189,48 @@ header div p {
     padding: 20px;
     text-align: center;
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+#langues {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+#langues h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+#langues hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.langues {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.langues div {
+    flex-basis: 100px;
+}
+
+.logo-langues {
+    width: 50px;
+    height: 50px;
+}
+
 .logo-progress p {
-    margin-top: -3px;
+    margin-top: -2px;
 }
 
 .logo-progress div {
@@ -216,7 +251,7 @@ progress {
     margin-top: 20px;
 }
 
-.text-progress{ 
+.text-progress { 
      margin-top: 20px;
 }
 
@@ -240,7 +275,8 @@ footer {
     #parcours ,
     #skills,
     #soft-skills,
-    #hobbies {
+    #hobbies,
+    #langues {
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -257,7 +293,8 @@ footer {
     #parcours ,
     #skills,
     #soft-skills,
-    #hobbies {
+    #hobbies,
+    #langues {
         padding-left: 120px;
         padding-right: 120px;
     }
@@ -273,7 +310,8 @@ footer {
     #parcours ,
     #skills,
     #soft-skills,
-    #hobbies {
+    #hobbies,
+    #langues {
         padding-left: 170px;
         padding-right: 170px;
     }
@@ -289,7 +327,8 @@ footer {
     #parcours ,
     #skills,
     #soft-skills,
-    #hobbies {
+    #hobbies,
+    #langues {
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -305,7 +344,8 @@ footer {
     #parcours ,
     #skills,
     #soft-skills,
-    #hobbies {
+    #hobbies,
+    #langues {
         padding-left: 400px;
         padding-right: 400px;
     }
