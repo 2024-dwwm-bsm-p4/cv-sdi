@@ -198,6 +198,14 @@ header div p {
     margin-top: -3px;
 }
 
+.logo-progress div {
+    flex-basis: 150px;
+}
+
+.logo-progress span {
+    flex-basis: 80px;
+}
+
 .logo-bar {
     width: 30px;
 }
@@ -222,4 +230,83 @@ footer {
     padding: 30px;
 }
 
-@media (min-width: 500px)
+@media (min-width: 500px) {
+    .about-me,
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 850px) {
+    .about-me,
+    footer {
+        padding-left: 90px;
+        padding-right: 90px;
+        
+    }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .about-me,
+    footer {
+        padding-left: 120px;
+        padding-right: 120px;  
+    }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies {
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-me,
+    footer {
+        padding-left: 140px;
+        padding-right: 140px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-me,
+    footer {
+        padding-left: 160px;
+        padding-right: 160px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
