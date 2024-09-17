@@ -268,10 +268,9 @@ footer {
 }
 
 @media (min-width: 500px) {
-    .about-me,
-    footer {
-        padding-left: 50px;
-        padding-right: 50px;
+    .about-me {
+        padding-left: 80px;
+        padding-right: 80px;
     }
     #experiences,
     #parcours ,
@@ -279,17 +278,15 @@ footer {
     #soft-skills,
     #hobbies,
     #langues {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
 @media (min-width: 850px) {
-    .about-me,
-    footer {
-        padding-left: 90px;
-        padding-right: 90px;
-        
+    .about-me {
+        padding-left: 170px;
+        padding-right: 170px;
     }
     #experiences,
     #parcours ,
@@ -297,34 +294,16 @@ footer {
     #soft-skills,
     #hobbies,
     #langues {
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
 
 @media (min-width: 1000px) {
-    .about-me,
-    footer {
-        padding-left: 120px;
-        padding-right: 120px;  
+    .about-me {
+        padding-left: 220px;
+        padding-right: 220px;  
     }
-    #experiences,
-    #parcours ,
-    #skills,
-    #soft-skills,
-    #hobbies,
-    #langues {
-        padding-left: 170px;
-        padding-right: 170px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .about-me,
-    footer {
-        padding-left: 140px;
-        padding-right: 140px;
-        }
     #experiences,
     #parcours ,
     #skills,
@@ -336,11 +315,26 @@ footer {
     }
 }
 
+@media (min-width: 1200px) {
+    .about-me {
+        padding-left: 270px;
+        padding-right: 270px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies,
+    #langues {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
 @media (min-width: 1400px) {
-    .about-me,
-    footer {
-        padding-left: 160px;
-        padding-right: 160px;
+    .about-me {
+        padding-left: 420px;
+        padding-right: 420px;
         }
     #experiences,
     #parcours ,
@@ -350,5 +344,53 @@ footer {
     #langues {
         padding-left: 400px;
         padding-right: 400px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .about-me {
+        padding-left: 520px;
+        padding-right: 520px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies,
+    #langues {
+        padding-left: 500px;
+        padding-right: 500px;
+    }
+}
+
+@media (min-width: 2150px) {
+    .about-me {
+        padding-left: 620px;
+        padding-right: 620px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies,
+    #langues {
+        padding-left: 600px;
+        padding-right: 600px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .about-me {
+        padding-left: 720px;
+        padding-right: 720px;
+        }
+    #experiences,
+    #parcours ,
+    #skills,
+    #soft-skills,
+    #hobbies,
+    #langues {
+        padding-left: 700px;
+        padding-right: 700px;
     }
 }
