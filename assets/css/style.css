@@ -7,11 +7,41 @@ body {
     padding: 0;
 }
 
-.text-center {
-    text-align: center;
-    }
-    
 header {
+    padding: 20px;
+}
+
+#burgerButton,
+#darkMode {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#darkMode {
+    display: none;
+}
+
+.logo-bars {
+    width: 20px;
+}
+
+.logo-dark-mode {
+    width: 20px;
+}
+
+#button-dark-mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#title {
+    text-align: center;
+    position: relative;
     color: #F5F5F5;
     width: 100%;
     height: auto;
@@ -21,15 +51,15 @@ header {
     background: rgb(3,0,45);
     }
 
-header div p a {
+#title div p a {
     text-decoration: none;
     }
 
-header div p a:hover {
+#title div p a:hover {
     text-decoration: underline;
 }
 
-header div p {
+#title div p {
     line-height: 0.6em;
     }
 
@@ -40,7 +70,7 @@ header div p {
     object-fit: cover;
     }
 
-.about-me {
+#aboutMe {
     padding: 50px;
     height: auto;
     background: rgb(5, 0, 60);
@@ -189,7 +219,7 @@ header div p {
     padding: 20px;
     text-align: center;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -268,7 +298,7 @@ footer {
 }
 
 @media (min-width: 500px) {
-    .about-me {
+    #aboutMe {
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -284,7 +314,7 @@ footer {
 }
 
 @media (min-width: 850px) {
-    .about-me {
+    #aboutMe {
         padding-left: 170px;
         padding-right: 170px;
     }
@@ -300,7 +330,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
-    .about-me {
+    #aboutMe {
         padding-left: 220px;
         padding-right: 220px;  
     }
@@ -316,7 +346,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    .about-me {
+    #aboutMe {
         padding-left: 270px;
         padding-right: 270px;
         }
@@ -332,7 +362,7 @@ footer {
 }
 
 @media (min-width: 1400px) {
-    .about-me {
+    #aboutMe {
         padding-left: 420px;
         padding-right: 420px;
         }
@@ -348,7 +378,7 @@ footer {
 }
 
 @media (min-width: 1800px) {
-    .about-me {
+    #aboutMe {
         padding-left: 520px;
         padding-right: 520px;
         }
@@ -364,7 +394,7 @@ footer {
 }
 
 @media (min-width: 2150px) {
-    .about-me {
+    #aboutMe {
         padding-left: 620px;
         padding-right: 620px;
         }
@@ -380,7 +410,7 @@ footer {
 }
 
 @media (min-width: 2400px) {
-    .about-me {
+    #aboutMe {
         padding-left: 720px;
         padding-right: 720px;
         }
