@@ -11,9 +11,54 @@ header {
     padding: 20px;
 }
 
-.btn-bg-black {
+.btn-black {
     background-color: #222222;
     color: #F5F5F5;
+}
+
+.text-blue {
+    color: rgb(3,0,45);
+}
+
+.dark-mode {
+    color: #F5F5F5;
+    background-color: #222222;
+}
+
+.dark-mode header {
+    background-color: #333333;
+}
+
+.dark-mode #experiences,
+.dark-mode #parcours,
+.dark-mode #skills,
+.dark-mode #soft-skills,
+.dark-mode #hobbies,
+.dark-mode #langues {
+    background-color: #333333;
+}
+
+.dark-mode .text-blue {
+    color: #F5F5F5;
+}
+
+.dark-mode .card {
+    background-color: #444444;
+    color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode .card:hover {
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode .card p {
+    color: #ececec;
+}
+
+.dark-mode .logo-softskills,
+.dark-mode .logo-hobbies {
+    filter: invert(1);
 }
 
 #title {
@@ -63,14 +108,6 @@ header {
     background-color: #fff;
     overflow-wrap: break-word;
     }
-
-.card h2 {
-    color: rgb(3,0,45);
-}
-
-.card h3 {
-    color: rgb(5, 0, 60);
-}
 
 .card:hover {
     transform: translate(-10px);
@@ -261,10 +298,6 @@ progress {
 
 .text-progress { 
      margin-top: 20px;
-}
-
-.text-blue {
-    color: rgb(3,0,45);
 }
 
 footer {
