@@ -2,18 +2,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: #F5F5F5;
-    color: #222222;
+    color: #121F3A;
     margin: 0;
     padding: 0;
 }
 
 header {
     padding: 20px;
-    background-color: rgb(3,0,45);
+    background-color: #121F3A;
+    text-align: left;
+}
+
+header div {
+    position: relative;
+    text-align: right;
 }
 
 .theme-checkbox {
-    --toggle-size: 16px;
+    --toggle-size: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -31,6 +37,7 @@ header {
     position: relative;
     cursor: pointer;
     font-size: var(--toggle-size);
+    position: relative;
   }
   
   .theme-checkbox::before {
@@ -61,7 +68,7 @@ header {
   }
 
 .text-blue {
-    color: rgb(3,0,45);
+    color: #121F3A;
 }
 
 .dark-mode {
@@ -110,7 +117,7 @@ header {
     padding: 20px;
     box-sizing: border-box;
     justify-content: center;
-    background: rgb(3,0,45);
+    background: #121F3A;
     }
 
 #title div p a {
@@ -135,7 +142,7 @@ header {
 #aboutMe {
     padding: 50px;
     height: auto;
-    background: rgb(5, 0, 60);
+    background: #304159;
     color: white;
     }
     
