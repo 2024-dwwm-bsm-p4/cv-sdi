@@ -1,21 +1,32 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: #F5F5F5;
-    color: #121F3A;
+	background-color: rgb(239 246 255);
+    color: #343A40;
     margin: 0;
     padding: 0;
 }
 
 header {
     padding: 20px;
-    background-color: #121F3A;
     text-align: left;
+    background-color: #007BFF;
 }
 
 header div {
     position: relative;
     text-align: right;
+}
+
+.visually-hidden {
+        position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .theme-checkbox {
@@ -68,30 +79,40 @@ header div {
   }
 
 .text-blue {
-    color: #121F3A;
+    color: #343A40;
 }
 
 .dark-mode {
-    color: #F5F5F5;
-    background-color: #222222;
-}gi
+    color: rgb(239 246 255);
+    background-color: rgb(10, 10, 30);
+}
 
-.dark-mode #experiences,
+.dark-mode header,
+.dark-mode footer {
+    background-color: rgb(30, 58, 138);
+}
+
+.dark-mode #title {
+    background-color: rgb(23, 35, 95)
+}
+
+.dark-mode #aboutMe {
+    background-color: rgb(28, 47, 65);
+}
+
 .dark-mode #parcours,
-.dark-mode #skills,
 .dark-mode #soft-skills,
-.dark-mode #hobbies,
 .dark-mode #langues {
-    background-color: #333333;
+    background-color: rgb(9, 14, 38);
 }
 
 .dark-mode .text-blue {
-    color: #F5F5F5;
+    color: rgb(239 246 255);
 }
 
 .dark-mode .card {
-    background-color: #444444;
-    color: #f5f5f5;
+    background-color:rgb(28, 47, 65);
+    color: rgb(239 246 255);
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
 }
 
@@ -111,13 +132,13 @@ header div {
 #title {
     text-align: center;
     position: relative;
-    color: #F5F5F5;
+    color: rgb(239 246 255);
     width: 100%;
     height: auto;
     padding: 20px;
     box-sizing: border-box;
     justify-content: center;
-    background: #121F3A;
+    background-color: rgb(59 130 246);
     }
 
 #title div p a {
@@ -142,8 +163,8 @@ header div {
 #aboutMe {
     padding: 50px;
     height: auto;
-    background: #304159;
-    color: white;
+    background-color: rgb(96 165 250);
+    color: rgb(239 246 255);
     }
     
 .card {
@@ -152,7 +173,9 @@ header div {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff;
+	background-color: rgb(245, 249, 255);
+
+
     overflow-wrap: break-word;
     }
 
@@ -183,7 +206,7 @@ header div {
 #parcours {
     padding: 20px;
     line-height: 1.2;
-    background-color: #ececec;
+    background-color: rgb(234, 243, 255);
 }
 
 #parcours h2 {
@@ -225,7 +248,7 @@ header div {
 #soft-skills {
     padding: 20px;
     line-height: 1.2;
-    background-color: #ececec;
+    background-color: rgb(234, 243, 255);
     }
 
 #soft-skills h2 {
@@ -288,7 +311,7 @@ header div {
 #langues {
     padding: 20px;
     line-height: 1.2;
-    background-color: #ececec;
+    background-color: rgb(234, 243, 255);
 }
 
 #langues h2 {
@@ -348,8 +371,8 @@ progress {
 }
 
 footer {
-    background: rgb(3,0,45);
-    color: #F5F5F5;
+    background: #007BFF;
+    color: rgb(239 246 255);
     padding: 30px;
     text-align: center;
 }
