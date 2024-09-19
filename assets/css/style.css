@@ -1,16 +1,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-	background-color: rgb(239 246 255);
+    background-color: rgb(239, 246, 255);
     color: #343A40;
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header {
     padding: 20px;
     text-align: left;
-    background-color: #007BFF;
+    background-color: #0370e5;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 header div {
@@ -19,7 +21,7 @@ header div {
 }
 
 .visually-hidden {
-        position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -36,54 +38,45 @@ header div {
     appearance: none;
     width: 6.25em;
     height: 3.125em;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
     background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
     background-size: 205%;
     background-position: 0;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
     border-radius: 99em;
     position: relative;
     cursor: pointer;
     font-size: var(--toggle-size);
-    position: relative;
-  }
-  
-  .theme-checkbox::before {
+}
+
+.theme-checkbox::before {
     content: "";
     width: 2.25em;
     height: 2.25em;
     position: absolute;
     top: 0.438em;
     left: 0.438em;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
     background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
     background-size: 205%;
     background-position: 100%;
     border-radius: 50%;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
-  }
-  
-  .theme-checkbox:checked::before {
+}
+
+.theme-checkbox:checked::before {
     left: calc(100% - 2.25em - 0.438em);
     background-position: 0;
-  }
-  
-  .theme-checkbox:checked {
+}
+
+.theme-checkbox:checked {
     background-position: 100%;
-  }
+}
 
 .text-blue {
     color: #343A40;
 }
 
 .dark-mode {
-    color: rgb(239 246 255);
+    color: rgb(239, 246, 255);
     background-color: rgb(10, 10, 30);
 }
 
@@ -93,7 +86,7 @@ header div {
 }
 
 .dark-mode #title {
-    background-color: rgb(23, 35, 95)
+    background-color: rgb(23, 35, 95);
 }
 
 .dark-mode #aboutMe {
@@ -107,12 +100,12 @@ header div {
 }
 
 .dark-mode .text-blue {
-    color: rgb(239 246 255);
+    color: rgb(239, 246, 255);
 }
 
 .dark-mode .card {
-    background-color:rgb(28, 47, 65);
-    color: rgb(239 246 255);
+    background-color: rgb(28, 47, 65);
+    color: rgb(239, 246, 255);
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
 }
 
@@ -132,18 +125,16 @@ header div {
 #title {
     text-align: center;
     position: relative;
-    color: rgb(239 246 255);
+    color: rgb(239, 246, 255);
     width: 100%;
-    height: auto;
     padding: 20px;
-    box-sizing: border-box;
-    justify-content: center;
-    background-color: rgb(59 130 246);
-    }
+    background-color: rgb(59, 130, 246);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
 
 #title div p a {
     text-decoration: none;
-    }
+}
 
 #title div p a:hover {
     text-decoration: underline;
@@ -151,91 +142,93 @@ header div {
 
 #title div p {
     line-height: 0.6em;
-    }
+}
 
 .rounded-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    }
+}
 
 #aboutMe {
     padding: 50px;
-    height: auto;
-    background-color: rgb(96 165 250);
-    color: rgb(239 246 255);
-    }
-    
+    background-color: rgb(96, 165, 250);
+    color: rgb(239, 246, 255);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
 .card {
     margin: 30px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-	background-color: rgb(245, 249, 255);
-
-
+    background-color: rgb(245, 249, 255);
     overflow-wrap: break-word;
-    }
+}
 
 .card:hover {
     transform: translate(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    }
+}
 
 .mb {
     margin-bottom: -8px;
 }
 
-#experiences {
+#experiences,
+#parcours,
+#skills,
+#soft-skills,
+#hobbies,
+#langues {
     padding: 20px;
     line-height: 1.2;
 }
 
-#experiences h2 {
+#experiences h2,
+#parcours h2,
+#skills h2,
+#soft-skills h2,
+#hobbies h2,
+#langues h2 {
     padding: 20px;
     margin: auto;
 }
 
-#experiences hr {
+#experiences hr,
+#parcours hr,
+#skills hr,
+#soft-skills hr,
+#hobbies hr,
+#langues hr {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#parcours {
-    padding: 20px;
-    line-height: 1.2;
+#parcours,
+#soft-skills,
+#langues {
     background-color: rgb(234, 243, 255);
 }
 
-#parcours h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: auto;
-}
-
-#parcours hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#skills {
+.soft-skills,
+.hobbies,
+.langues {
     padding: 20px;
-    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#skills h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: auto;
-}
-
-#skills hr {
-    margin-left: 20px;
-    margin-right: 20px;
+.logo-softskills,
+.logo-skills,
+.logo-langues {
+    width: 50px;
+    height: 50px;
 }
 
 .logo-progress {
@@ -243,105 +236,6 @@ header div {
     text-align: center;
     display: flex;
     gap: 20px;
-}
-
-#soft-skills {
-    padding: 20px;
-    line-height: 1.2;
-    background-color: rgb(234, 243, 255);
-    }
-
-#soft-skills h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: auto;
-}
-
-#soft-skills hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.soft-skills {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    gap: 80px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.logo-softskills {
-    width: 50px;
-    height: 50px;
-}
-
-.logo-skills {
-    width: 50px;
-    height: 50px;
-}
-
-#hobbies {
-    padding: 20px;
-    line-height: 1.2;
-}
-
-#hobbies h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: auto;
-}
-
-#hobbies hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.hobbies {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    gap: 80px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#langues {
-    padding: 20px;
-    line-height: 1.2;
-    background-color: rgb(234, 243, 255);
-}
-
-#langues h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: auto;
-}
-
-#langues hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.langues {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.langues div {
-    flex-basis: 100px;
-}
-
-.logo-langues {
-    width: 50px;
-    height: 50px;
 }
 
 .logo-progress p {
@@ -366,30 +260,32 @@ progress {
     margin-top: 20px;
 }
 
-.text-progress { 
-     margin-top: 20px;
+.text-progress {
+    margin-top: 20px;
 }
 
 footer {
     background: #007BFF;
-    color: rgb(239 246 255);
+    color: rgb(239, 246, 255);
     padding: 30px;
     text-align: center;
 }
 
+/* Media Queries */
 @media (min-width: 500px) {
-    #aboutMe {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+    #aboutMe,
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
     #langues {
         padding-left: 60px;
         padding-right: 60px;
+    }
+    #aboutMe {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 
@@ -399,7 +295,7 @@ footer {
         padding-right: 170px;
     }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -412,10 +308,10 @@ footer {
 @media (min-width: 1000px) {
     #aboutMe {
         padding-left: 220px;
-        padding-right: 220px;  
+        padding-right: 220px;
     }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -429,9 +325,9 @@ footer {
     #aboutMe {
         padding-left: 270px;
         padding-right: 270px;
-        }
+    }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -445,9 +341,9 @@ footer {
     #aboutMe {
         padding-left: 420px;
         padding-right: 420px;
-        }
+    }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -461,9 +357,9 @@ footer {
     #aboutMe {
         padding-left: 520px;
         padding-right: 520px;
-        }
+    }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -477,9 +373,9 @@ footer {
     #aboutMe {
         padding-left: 620px;
         padding-right: 620px;
-        }
+    }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
@@ -493,9 +389,9 @@ footer {
     #aboutMe {
         padding-left: 720px;
         padding-right: 720px;
-        }
+    }
     #experiences,
-    #parcours ,
+    #parcours,
     #skills,
     #soft-skills,
     #hobbies,
