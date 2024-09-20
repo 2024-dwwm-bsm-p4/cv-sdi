@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: rgb(239, 246, 255);
@@ -6,27 +7,33 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease, color 0.5s ease;
+    transition: filter 0.5s ease;
 }
 
 header {
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgb(239, 246, 255);
-    padding: 20px;
-    background-color: #0370e5;
+    padding-left: 0px;
+    padding-right: 10px;
     transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
-.hamburger {
+.btn-burger {
     cursor: pointer;
 }
   
-.hamburger input {
+.btn-burger input {
     display: none;
 }
   
-.hamburger svg {
+.btn-burger svg {
     height: 3em;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -45,35 +52,45 @@ header {
     stroke-dasharray: 12 63;
 }
   
-.hamburger input:checked + svg {
+.btn-burger input:checked + svg {
     transform: rotate(-45deg);
 }
   
-.hamburger input:checked + svg .line-top-bottom {
+.btn-burger input:checked + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
 }
-  
 
-#navbar {
-    display: none;
+.burger-list {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 9000;
+    left: -100%;
+    top: 100px;
+    width: 100%;
+    transition: left 0.5s ease;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    text-align: center;
+.burger-list.active {
+    left: 0;
 }
 
-.nav-links li a {
-    color: rgb(239, 246, 255);
+.burger-list.active {
+
+}
+
+body.active {
+    filter: blur(5px);
+}
+
+.burger-list a {
+    color: #2a2a2a;
+    padding: 20px;
+    display: block;
     text-decoration: none;
+    transition: 0,5s;
 }
 
-.nav-links li a::hover {
-    text-decoration: underline;
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -138,17 +155,12 @@ header {
     background-color: rgb(10, 10, 30);
 }
 
-.dark-mode header,
-.dark-mode footer {
-    background-color: rgb(30, 58, 138);
-}
-
 .dark-mode #title {
     background-color: rgb(23, 35, 95);
 }
 
 .dark-mode #aboutMe {
-    background-color: rgb(28, 47, 65);
+    background-color: rgb(20, 29, 69);
 }
 
 .dark-mode #parcours,
@@ -162,7 +174,7 @@ header {
 }
 
 .dark-mode .card {
-    background-color: rgb(28, 47, 65);
+    background-color: rgb(20, 29, 69);
     color: rgb(239, 246, 255);
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
 }
@@ -185,6 +197,7 @@ header {
     position: relative;
     color: rgb(239, 246, 255);
     padding: 20px;
+    padding-top: 100px;
     background-color: rgb(59, 130, 246);
     transition: background-color 0.5s ease, transform 0.5s ease;
 }
@@ -322,7 +335,7 @@ progress {
 }
 
 footer {
-    background: #007BFF;
+    background-color: rgb(23, 35, 95);
     color: rgb(239, 246, 255);
     padding: 30px;
     text-align: center;
